@@ -1,0 +1,66 @@
+@import '../css-config/mixins.scss';
+
+.ThoughtTimeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    position: relative;
+    margin: 20px 0px;
+
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        height: 66px;
+        width: 66px;
+        border-radius: 50%;
+        background-color: rgba(245, 245, 245, 1);
+
+        .icon {
+            filter: drop-shadow(0 0 10px rgba(251, 203, 24, 0.7)) drop-shadow(0 0 20px rgba(251, 203, 24, 0.8)) drop-shadow(0 0 30px rgba(251, 203, 24, 0.9)) // drop-shadow(0 0 40px rgba(251, 203, 24, 0.95))
+        }
+
+    }
+
+
+    .rectangle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        width: 200px;
+        border-radius: 16px;
+        z-index: 9;
+        background-color: rgba(245, 245, 245, 1);
+        // position: absolute;
+        // top: 50%;
+        margin-top: -15%;
+
+
+        .heading {
+            font-size: 14px;
+            margin-top: 15%;
+            font-weight: 500;
+        }
+
+        .text{
+            margin-top: 10%;
+            width: 75%;
+            font-size: 12px;
+            text-align: center;
+            color: rgba(120, 116, 134, 1);
+        }
+
+        input {
+            margin-top: 10%;
+            border-radius: 4px;
+            border: none;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 4%;
+        }
+    }
+}

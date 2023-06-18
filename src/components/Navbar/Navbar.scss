@@ -1,0 +1,101 @@
+@import '../css-config/mixins.scss';
+
+.navbarContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid rgba(219, 219, 219, 1);
+    padding: 2px;
+
+    .searchContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+
+        .searchBar {
+            display: flex;
+            align-items: center;
+            background-color: rgba(245, 245, 245, 1);
+            width: 50%;
+            margin-left: 5%;
+            border: 1px;
+            border-radius: 6px;
+            padding: 10px 5px;
+            
+
+
+            input {
+                text-decoration: none;
+                border: none;
+                background-color: inherit;
+                margin-top: 2px;
+                padding-left: 10px;
+                font-size: 17px;
+                width: 90%;
+                outline: none;
+            }
+        }
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 10%;
+
+        .bellIcon{
+            position: relative;
+            .dot{
+                height: 5px;
+                width: 5px;
+                background-color: #D8727D;
+                border-radius: 50%;
+                position: absolute;
+                right: 26%;
+                top: 10%;
+            }
+        }
+    }
+
+    .profileContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 3%;
+        padding: 10px 30px;
+
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .name {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(13, 6, 45, 1);
+            }
+
+            .location {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 14px;
+                width: 100%;
+                color: rgba(120, 116, 134, 1);
+            }
+        }
+
+        .profilePic {
+            margin: 0px 20px;
+
+            img {
+                height: 38px;
+                width: 38px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+@import '../css-config/mixins.scss';
+
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: red;
+    // border: 1px solid black;
+    position: relative;
+    margin-bottom: 1rem;
+
+    .mainHeadingContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid rgba(219, 219, 219, 1);
+        padding: 20px 0px;
+        width: 100%;
+        margin-bottom: 1rem;
+
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+
+        .mainHeading {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .arrow {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            align-items: center;
+        }
+    }
+
+    .subHeading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(120, 116, 134, 1);
+
+        .icon {
+            padding: 0.6rem;
+        }
+
+    }
+}

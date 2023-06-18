@@ -1,0 +1,44 @@
+@import '../css-config/mixins.scss';
+
+
+.avatarGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hiddenAvatar{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #F4D7DA;
+        border: 2px solid white;
+        color: #D25B68;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15px;
+        cursor: pointer;
+    }
+    .avatar {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #D25B68;
+        border: 2px solid white;
+        margin-left: -15px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        position: relative;
+
+        &:hover:not(:last-of-type){
+            transform: translate(-10px);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

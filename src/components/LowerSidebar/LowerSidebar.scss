@@ -1,0 +1,64 @@
+@import '../css-config/mixins.scss';
+
+
+.LowerSidebarContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .headingContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #787486;
+        padding: 5%;
+        .heading{
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+
+    .subHeading{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.5rem 0rem;
+        position: relative;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        color: rgba(120, 116, 134, 1);
+        ;
+
+        .label{
+            margin-left: 5%;
+            padding: 0.7rem 0rem;
+            font-size: 16px;
+        }
+
+        .icon{
+            display: none;
+            transition: 1s ease-in;
+        }
+
+        &:hover {
+            background-color: rgba(80, 48, 229, 0.08);
+            border-radius: 10px;
+            color: rgba(13, 6, 45, 1);
+            font-weight: 600;
+
+            .icon {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-grow: 1;
+                margin-right: 8%;
+                
+            }
+        }
+
+        
+    }
+}
