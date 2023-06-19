@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/colorfilter.svg";
-import { RxDoubleArrowLeft } from "react-icons/rx";
+import { HiOutlineChevronDoubleLeft } from "react-icons/hi";
 import MessageIcon from "../../assets/message.svg";
 import SettingIcon from "../../assets/setting.svg";
 import ProfileIcon from "../../assets/profile.svg";
@@ -18,7 +18,7 @@ function Sidebar() {
         </div>
         <div className="mainHeading">Project M.</div>
         <div className="arrow">
-          <RxDoubleArrowLeft size={25}/>
+          <HiOutlineChevronDoubleLeft size={20} color="#787486"/>
         </div>
       </div>
 

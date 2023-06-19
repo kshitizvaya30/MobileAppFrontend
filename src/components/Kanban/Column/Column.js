@@ -4,14 +4,14 @@ import Task from "../Task/Task";
 import "./Column.scss";
 import addSquare from '../../../assets/add-square.svg'
 
-function Column({ title, tasks, id }) {
+function Column({ title, tasks, id, color, dotColor, num }) {
   return (
     <div className="columnContainer">
-      <div className="header">
-        <div className="dot" style={{backgroundColor: 'rgba(80, 48, 229, 1)'}}></div>
+      <div className="header" style={{borderBottom: `3px solid ${dotColor}`}}>
+        <div className="dot" style={{backgroundColor: `${color}` }}></div>
         <div className="title">{title}</div>
         <div className="circleIcon">
-          <div className="number">4</div>
+          <div className="number">{num}</div>
         </div>
         <div className="icon">
           <img src={addSquare} alt="add icon" />

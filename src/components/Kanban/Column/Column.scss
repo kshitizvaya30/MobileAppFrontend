@@ -18,11 +18,11 @@
         align-items: center;
         position: sticky;
         margin: 0px 20px;
-        border-bottom: 3px solid rgba(80, 48, 229, 1);
         padding: 10px;
         padding-bottom: 15px !important;
         margin: 0px auto;
         width: 82%;
+
         .dot{
             height: 8px;
             width: 8px;
@@ -38,7 +38,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 3px 5px;
+            margin: 5px;
 
             .number{
                 display: flex;
@@ -58,6 +58,7 @@
         .icon{
             position: absolute;
             right: 0%;
+            margin-top: 5px;
         }
     }
     

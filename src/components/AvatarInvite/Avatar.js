@@ -5,7 +5,8 @@ import profileImg3 from "../../assets/Ellipse 13.png";
 import profileImg4 from "../../assets/Ellipse 14.png";
 import profileImg5 from "../../assets/Ellipse 15.png";
 
-function Avatar({extraVisible}) {
+function Avatar({extraVisible, images}) {
+  // console.log(images);
   const profileImages = [
     profileImg2,
     profileImg3,
@@ -15,7 +16,7 @@ function Avatar({extraVisible}) {
 
   return (
     <div className="avatarGroup">
-      {profileImages.map((image, index) => (
+      {images.map((image, index) => (
         <div className="avatar" key={index}>
           <img src={image} alt="profileImg" />
         </div>

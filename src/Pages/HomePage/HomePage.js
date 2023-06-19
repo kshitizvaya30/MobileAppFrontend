@@ -3,7 +3,7 @@ import Avatar from "../../components/AvatarInvite/Avatar";
 import LowerSidebar from "../../components/LowerSidebar/LowerSidebar";
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import ThoughtTime from "../../components/ThoiughtTime/ThoughtTime";
+import ThoughtTime from "../../components/ThoughtTime/ThoughtTime";
 import ProfileIcon from "../../assets/profile.svg";
 import "./HomePage.scss";
 import { BsPlusSquare } from "react-icons/bs";
@@ -14,8 +14,14 @@ import { CiFilter, CiCalendarDate } from "react-icons/ci";
 import Equals from "../../assets/Equals.svg";
 import FourCircle from "../../assets/FourCircle.svg";
 import Kanban from "../../components/Kanban/Kanban";
+import  profileImg1 from '../../assets/Ellipse 12.png';
+import  profileImg2 from '../../assets/Ellipse 13.png';
+import  profileImg3 from '../../assets/Ellipse 14.png';
+import  profileImg4 from '../../assets/Ellipse 15.png';
+
 
 function HomePage() {
+  const profiles= [profileImg1,profileImg2,profileImg3,profileImg4]
   return (
     <div className="homeContainer">
       <div className="leftContainer">
@@ -50,7 +56,7 @@ function HomePage() {
               />
               <div className="text">Invite</div>
             </div>
-            <Avatar extraVisible={true} />
+            <Avatar extraVisible={true} images={profiles} />
           </div>
         </div>
 

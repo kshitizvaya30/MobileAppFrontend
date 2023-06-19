@@ -1,23 +1,33 @@
+import modal_Image1 from "../src/assets/unsplash_MicqqGyDQ6w.png";
+import modal_Image2 from "../src/assets/taskImages/unsplash_BS_1XGRkIH4.png";
+import modal_Image3 from "../src/assets/taskImages/unsplash_KIqJfzbII9w.png";
+import modal_Image4 from "../src/assets/taskImages/Plant Care App (Dribbble shot) 1.png";
+import profileImg1 from "../src/assets/Ellipse 12.png";
+import profileImg2 from "../src/assets/Ellipse 13.png";
+import profileImg3 from "../src/assets/Ellipse 14.png";
+import profileImg4 from "../src/assets/Ellipse 15.png";
+import profileImg5 from "../src/assets/Ellipse 16.png";
+
 export const SampleObjects = [
-    { userId: 1, id: 1, title: 'delectus aut autem', status: 0, modalImage: true,  subtext: false },
-    { userId: 1, id: 2, title: 'quis ut nam facilis et officia qui', status: 1, modalImage: false ,  subtext: true},
-    { userId: 1, id: 3, title: 'fugiat veniam minus', status: 2, modalImage: true ,  subtext: false},
-    { userId: 1, id: 4, title: 'et porro tempora', status: 0, modalImage: false,  subtext: false},
-    { userId: 1, id: 5, title: 'laboriosam mollitia et enim quasi adipisci quia provident illum', status: 1 , modalImage: false,  subtext: true},
-    { userId: 1, id: 6, title: 'qui ullam ratione quibusdam voluptatem quia omnis', status: 2 , modalImage: true,  subtext: false},
-    { userId: 1, id: 7, title: 'illo expedita consequatur quia in', status: 0 , modalImage: false,  subtext: false},
-    { userId: 1, id: 8, title: 'quo adipisci enim quam ut ab', status: 1, modalImage: false,  subtext: true },
-    { userId: 1, id: 9, title: 'molestiae perspiciatis ipsa', status: 2, modalImage: true ,  subtext: false},
-    { userId: 1, id: 10, title: 'illo est ratione doloremque quia maiores aut', status: 0 , modalImage: false,  subtext: false},
-    { userId: 1, id: 11, title: 'vero rerum temporibus dolor', status: 1 , modalImage: false,  subtext: true},
-    { userId: 1, id: 12, title: 'ipsa repellendus fugit nisi', status: 2 , modalImage: true,  subtext: false},
-    { userId: 1, id: 13, title: 'et doloremque nulla', status: 0 , modalImage: false,  subtext: false},
-    { userId: 1, id: 14, title: 'repellendus sunt dolores architecto voluptatum', status: 1 , modalImage: false,  subtext: true},
-    { userId: 1, id: 15, title: 'ab voluptatum amet voluptas', status: 2 , modalImage: true,  subtext: false},
-    { userId: 1, id: 16, title: 'accusamus eos facilis sint et aut voluptatem', status: 0 , modalImage: false,  subtext: false},
-    { userId: 1, id: 17, title: 'quo laboriosam deleniti aut qui', status: 1 , modalImage: false,  subtext: true},
-    { userId: 1, id: 18, title: 'dolorum est consequatur ea mollitia in culpa', status: 2 , modalImage: true,  subtext: false},
-    { userId: 1, id: 19, title: 'molestiae ipsa aut voluptatibus pariatur dolor nihil', status: 0 , modalImage: false,  subtext: false},
-    { userId: 1, id: 20, title: 'ullam nobis libero sapiente ad optio sint', status: 1 , modalImage: false,  subtext: true},
+    { userId: 1, id: 1,  heading: 'Onboarding Illustrations',title: 'Brainstorming brings team members.', status: 0, modal1: true,  subtext: false, images: [modal_Image1], modal2: false, profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)", comments:"14",  files:"15"},
+    { userId: 1, id: 2, heading: 'Brainstorming',title: 'Brainstorming brings team members diverse experience into play.', status: 1, modal1: false ,  subtext: true , modal2: false, profiles:[profileImg1,profileImg3,profileImg4], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 3, heading: 'Mobile App Design',title: '', status: 2, modal1: true ,  subtext: false, images: [modal_Image4], modal2: false, profiles:[profileImg5,profileImg4], priorityStatus: "COMPLETED", color: "#68B266", btnColor: "rgba(131, 194, 157, 0.2)" , comments:"12",  files:"15"},
+    { userId: 1, id: 4, heading: 'Research',title: 'OUser research helps you to create an optimal product for users.', status: 1, modal1: false,  subtext: true, modal2: false, profiles:[profileImg2,profileImg5], priorityStatus: "HIGH", color: "#D8727D", btnColor: "rgba(216, 114, 125, 0.2)" , comments:"10",  files:"3"},
+    { userId: 1, id: 5, heading: 'Moodboard',title: '', status: 0 , modal1: false,  subtext: false, images: [modal_Image2,modal_Image3], modal2: true,profiles:[profileImg3], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"9",  files:"10"},
+    { userId: 1, id: 6, heading: 'Design Systems',title: 'It just needs to adapt the UI from what you did before', status: 2 , modal1: false,  subtext: true, images: [], modal2: false, profiles:[profileImg1,profileImg3,profileImg4],priorityStatus: "COMPLETED", color: "#68B266", btnColor: "rgba(131, 194, 157, 0.2)", comments:"12",  files:"15"},
+    { userId: 1, id: 7, heading: 'Wireframes',title: 'Low fidelity wireframes include the most basic content and visuals', status: 1 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg1,profileImg5,profileImg4], priorityStatus: "HIGH", color: "#D8727D", btnColor: "rgba(216, 114, 125, 0.2)", comments:"12",  files:"0"},
+    { userId: 1, id: 8, heading: 'quo adipisci enim quam ut ab', title: 'Onboarding Illustrations',status: 1, modal1: false,  subtext: true , modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 9, heading: 'molestiae perspiciatis ipsa',title: 'Onboarding Illustrations', status: 2, modal1: true ,  subtext: true, images: [modal_Image1], modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)", comments:"12",  files:"0" },
+    { userId: 1, id: 10, heading: 'illo est ratione doloremque quia maiores aut', title: 'Onboarding Illustrations',status: 0 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 11, heading: 'vero rerum temporibus dolor', title: 'Onboarding Illustrations',status: 1 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 12, heading: 'ipsa repellendus fugit nisi', title: 'Onboarding Illustrations',status: 2 , modal1: true,  subtext: true, images: [modal_Image1], modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)", comments:"12",  files:"0" },
+    { userId: 1, id: 13, heading: 'et doloremque nulla', status: 0 , title: 'Onboarding Illustrations',modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 14, heading: 'repellendus sunt dolores architecto voluptatum',title: 'Onboarding Illustrations', status: 1 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 15, heading: 'ab voluptatum amet voluptas', title: 'Onboarding Illustrations',status: 2 , modal1: true,  subtext: true, images: [modal_Image1], modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 16, heading: 'accusamus eos facilis sint et aut voluptatem',title: 'Onboarding Illustrations', status: 0 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 17, heading: 'quo laboriosam deleniti aut qui', title: 'Onboarding Illustrations',status: 1 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 18, heading: 'dolorum est consequatur ea mollitia in culpa', title: 'Onboarding Illustrations',status: 2 , modal1: true,  subtext: true, images: [modal_Image1], modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 19, heading: 'molestiae ipsa aut voluptatibus pariatur dolor nihil', title: 'Onboarding Illustrations',status: 0 , modal1: false,  subtext: false, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
+    { userId: 1, id: 20, heading: 'ullam nobis libero sapiente ad optio sint',title: 'Onboarding Illustrations', status: 1 , modal1: false,  subtext: true, modal2: false,  profiles:[profileImg3,profileImg4,profileImg1], priorityStatus: "LOW", color: "#d58d49", btnColor: "rgba(223, 168, 116, 0.2)" , comments:"12",  files:"0"},
   ];
   
