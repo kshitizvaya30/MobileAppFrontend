@@ -4,7 +4,7 @@ import Task from "../Task/Task";
 import "./Column.scss";
 import addSquare from '../../../assets/add-square.svg'
 
-function Column({ title, tasks, id, color, dotColor, num }) {
+function Column({ title, tasks, id, color, dotColor, num, showBtn }) {
   return (
     <div className="columnContainer">
       <div className="header" style={{borderBottom: `3px solid ${dotColor}`}}>
@@ -13,9 +13,9 @@ function Column({ title, tasks, id, color, dotColor, num }) {
         <div className="circleIcon">
           <div className="number">{num}</div>
         </div>
-        <div className="icon">
+        {showBtn && <div className="icon">
           <img src={addSquare} alt="add icon" />
-        </div>
+        </div>}
       </div>
       <Droppable droppableId={id}>
       {(provided, snapshot) => (

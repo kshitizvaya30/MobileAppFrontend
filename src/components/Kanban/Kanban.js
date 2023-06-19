@@ -68,9 +68,9 @@ function Kanban() {
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
       <div className="kanbanContainer">
-        <Column title={"To Do"} tasks={todo} id={"1"} color="#5030E5" dotColor="#5030E5" num={4} />
-        <Column title={"On Progress"} tasks={progress} id={"2"} color="#FFA500" dotColor="#FFA500" num={3} />
-        <Column title={"Done"} tasks={done} id={"3"} color="#8BC48A" dotColor="#76A5EA" num={2} />
+        <Column title={"To Do"} tasks={todo} id={"1"} color="#5030E5" dotColor="#5030E5" num={4} showBtn={true} />
+        <Column title={"On Progress"} tasks={progress} id={"2"} color="#FFA500" dotColor="#FFA500" num={3} showBtn={false}/>
+        <Column title={"Done"} tasks={done} id={"3"} color="#8BC48A" dotColor="#76A5EA" num={2} showBtn={false} />
       </div>
     </DragDropContext>
   );
