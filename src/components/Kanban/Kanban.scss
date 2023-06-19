@@ -3,4 +3,8 @@
 .kanbanContainer{
     display: flex;
     justify-content: space-between;
+
+    .column{
+        margin: 20px;
+    }
 }
