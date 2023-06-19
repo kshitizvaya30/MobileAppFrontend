@@ -11,8 +11,9 @@ import { RiPencilLine } from "react-icons/ri";
 import { FiLink2 } from "react-icons/fi";
 import DropdownBtn from "../../components/DropdownBtn/DropdownBtn";
 import { CiFilter, CiCalendarDate } from "react-icons/ci";
-import Equals from '../../assets/Equals.svg';
-import FourCircle from '../../assets/FourCircle.svg';
+import Equals from "../../assets/Equals.svg";
+import FourCircle from "../../assets/FourCircle.svg";
+import Kanban from "../../components/Kanban/Kanban";
 
 function HomePage() {
   return (
@@ -49,7 +50,7 @@ function HomePage() {
               />
               <div className="text">Invite</div>
             </div>
-            <Avatar />
+            <Avatar extraVisible={true} />
           </div>
         </div>
 
@@ -71,9 +72,16 @@ function HomePage() {
               <div className="text">Share</div>
             </div>
             <div className="bar"></div>
-            <div className="icon1"><img src={Equals} alt="equal Img" /></div>
-            <div className="icon2"><img src={FourCircle} alt="equal Img" /></div>
+            <div className="icon1">
+              <img src={Equals} alt="equal Img" />
+            </div>
+            <div className="icon2">
+              <img src={FourCircle} alt="equal Img" />
+            </div>
           </div>
+        </div>
+        <div className="kanbanContainer">
+          <Kanban />
         </div>
       </div>
     </div>

@@ -1,13 +1,11 @@
 import React from "react";
 import "./Avatar.scss";
-
-import profileImg from "../../assets/image1.png";
 import profileImg2 from "../../assets/Ellipse 12.png";
 import profileImg3 from "../../assets/Ellipse 13.png";
 import profileImg4 from "../../assets/Ellipse 14.png";
 import profileImg5 from "../../assets/Ellipse 15.png";
 
-function Avatar() {
+function Avatar({extraVisible}) {
   const profileImages = [
     profileImg2,
     profileImg3,
@@ -22,7 +20,7 @@ function Avatar() {
           <img src={image} alt="profileImg" />
         </div>
       ))}
-      <div className="hiddenAvatar">+2</div>
+      {extraVisible && <div className="hiddenAvatar">+2</div>}
     </div>
   );
 }

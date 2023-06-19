@@ -1,11 +1,11 @@
 import './App.css';
+import Kanban from './components/Kanban/Kanban';
 import HomePage from './Pages/HomePage/HomePage';
-import Cards from './components/Cards/Cards';
 
 function App() {
   return (
     <>
-    <Cards />
+    <HomePage />
     </>
   );
 }
