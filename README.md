@@ -1,3 +1,14 @@
+# Deployed Link
+https://mercor-frontend.netlify.app/
+
+
+# Preview
+<img width="1677" alt="Untitled" src="https://github.com/kshitizvaya30/MobileAppFrontend/assets/75470682/b83b73e9-ac7e-4889-b3c1-1e46322192d5">
+<img width="1677" alt="Screenshot 2023-06-23 at 10 20 12 AM" src="https://github.com/kshitizvaya30/MobileAppFrontend/assets/75470682/4bce066d-add9-41fb-9cd0-12212df9956f">
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
